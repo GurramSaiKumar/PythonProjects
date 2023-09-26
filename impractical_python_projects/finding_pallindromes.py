@@ -14,7 +14,5 @@ def find_palindromes():
     print(list_10)
 
 
-
-
 if __name__ == '__main__':
     find_palindromes()

@@ -1,18 +1,23 @@
+from collections import defaultdict
+
+
 def find_palindromes():
-    list_10 = []
-    with open('utils/dictionary.txt', 'r') as file:
-        # while True:
-        #     content = file.readline()
-        #     if len(list_10) > 10:
-        #         break
-        #     list_10.append(content.strip())
-        for _ in range(10):
-            content = file.readline()
-            if not content:
-                break
-            list_10.append(content.strip())
-    print(list_10)
+    count = defaultdict(int)
+    for k, v in count.items():
+        print(k, v)
+
+
+def teach_something():
+    print("I am th best!!")
 
 
 if __name__ == '__main__':
-    find_palindromes()
+    # teach_something()
+    # teach_something()
+    # find_palindromes()
+    nums = [1, 1, 3, 4]
+    l = sorted(nums)
+    index_dic = defaultdict(list)
+    for i in range(0, len(nums)):
+        index_dic[nums[i]].append(i)
+    print(index_dic)

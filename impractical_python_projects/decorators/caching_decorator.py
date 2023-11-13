@@ -17,12 +17,8 @@ def expensive_calculation(x, y):
     return x + y
 
 
-# result1 = expensive_calculation(3, 5)
-# result2 = expensive_calculation(3, 5)
-#
-# print("Result 1:", result1)
-# print("Result 2:", result2)
+result1 = expensive_calculation(3, 5)
+result2 = expensive_calculation(3, 5)
 
-my_list = [1, 2, 3, 4]
-my_list[:] = [i for i in my_list if i%2 == 0]
-print(my_list)
+print("Result 1:", result1)
+print("Result 2:", result2)
